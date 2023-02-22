@@ -1,0 +1,8 @@
+switch(input){
+	case "int":
+		//oparation
+		break;
+	default:
+		//oparation
+		break;
+}

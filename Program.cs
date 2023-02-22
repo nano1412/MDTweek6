@@ -5,6 +5,8 @@ namespace costomname {
           static void Main(string[] args) {
                     //Change();
                     //Change2();
+                    Switchcase();
+                    //Switchcase2();
           }
 
           static void Change(){
@@ -115,6 +117,46 @@ namespace costomname {
                     Console.WriteLine("1: {0}", one);
                     Console.WriteLine(".50: {0}", P50);
                     Console.WriteLine(".25: {0}", P25);
+          }
+
+          static void Switchcase(){
+                    Console.WriteLine("Please select menu\n--------------------\n1. Login\n2. Register");
+                    int input = int.Parse(Console.ReadLine());
+                    switch(input){
+                              case 1:
+                              Console.Clear();
+                              Console.WriteLine("Login");
+                              break;
+                              case > 1 and < 10:
+                              Console.Clear();
+                              Console.WriteLine("Register");
+                              break;
+                              default:
+                              Console.Clear();
+                              Console.WriteLine("Invalid input");
+                              break;
+                    }
+          }
+          static void Switchcase2(){
+                    Console.Write("num1:");
+                    int num1 = int.Parse(Console.ReadLine());
+                    Console.Write("num2:");
+                    int num2 = int.Parse(Console.ReadLine());
+                    Console.Write("Operation:");
+                    string Operation = Console.ReadLine();
+
+                    switch (Operation){
+                              case "+":
+                                        Console.WriteLine("{0}", num1+num2);
+                                        break;
+                              case "-":
+                                        Console.WriteLine("{0}", num1-num2);
+                                        break;
+                              default:
+                                        Console.WriteLine("incorrect input");
+                                        break;
+                    }
+
           }
      }
 }
