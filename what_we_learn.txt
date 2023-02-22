@@ -1,8 +1,10 @@
 switch(input){
-	case "int":
-		//oparation
+	case "number":
+		//operation
 		break;
 	default:
-		//oparation
+		//operation
 		break;
 }
+
+while(condition){operation}

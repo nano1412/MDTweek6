@@ -5,8 +5,10 @@ namespace costomname {
           static void Main(string[] args) {
                     //Change();
                     //Change2();
-                    Switchcase();
-                    //Switchcase2();
+                    //Switchcase();
+                    //SwitchcaseOperation();
+                    //Loop();
+                    Mother2();
           }
 
           static void Change(){
@@ -137,7 +139,7 @@ namespace costomname {
                               break;
                     }
           }
-          static void Switchcase2(){
+          static void SwitchcaseOperation(){
                     Console.Write("num1:");
                     int num1 = int.Parse(Console.ReadLine());
                     Console.Write("num2:");
@@ -157,6 +159,22 @@ namespace costomname {
                                         break;
                     }
 
+          }
+          static void Loop(){
+                    int num = 0;
+                    int plus = 1;
+                    while(plus <=5){
+                              num = num + plus;
+                              plus++;
+                    }
+                    Console.WriteLine("{0}", num);
+          }
+          static void Mother2(){
+                    int multiply = 0;
+                    while(multiply<=12){
+                              Console.WriteLine("2 x {0} = {1}",multiply, multiply*2);
+                              multiply++;
+                    }
           }
      }
 }
