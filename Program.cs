@@ -8,7 +8,8 @@ namespace costomname {
                     //Switchcase();
                     //SwitchcaseOperation();
                     //Loop();
-                    Mother2();
+                    //Mother2();
+                    LoopBreak();
           }
 
           static void Change(){
@@ -175,6 +176,18 @@ namespace costomname {
                               Console.WriteLine("2 x {0} = {1}",multiply, multiply*2);
                               multiply++;
                     }
+          }
+          static void LoopBreak(){
+                    int num = int.Parse(Console.ReadLine());
+                    int storage = 0;
+                    while (num>0){
+                              num = int.Parse(Console.ReadLine());
+                              if (num > storage){
+                                        storage = num;
+                              }
+                              else{break;} //not necessary
+                    }
+                    Console.WriteLine("{0}",storage);
           }
      }
 }
